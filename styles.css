@@ -1,0 +1,123 @@
+/* Global Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9aa2, #ffb6c1, #ff69b4, #ffd1dc);
+  background-size: 300% 300%;
+  animation: backgroundAnimation 8s infinite alternate;
+  color: #fff;
+  text-align: center;
+}
+
+/* Background Animation */
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Main Container */
+.container {
+  margin: 5% auto;
+  padding: 30px;
+  max-width: 800px;
+  background: rgba(255, 240, 245, 0.9);
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.5);
+  border: 3px solid #ff69b4;
+  animation: fadeIn 1.5s ease;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ff69b4;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+/* Compliment Text */
+p {
+  font-size: 1.6rem;
+  margin: 20px 0;
+  color: #ff6f91;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+button {
+  background: linear-gradient(45deg, #ff69b4, #ff85a1, #ffd1dc);
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #ff6f91, #ffa3d7, #ffd9e3);
+  box-shadow: 0 8px 20px rgba(255, 20, 147, 0.6);
+}
+
+/* Momo Section */
+.momo-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 182, 193, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.5);
+}
+
+.momo-section img {
+  width: 120px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid #ff69b4;
+}
+
+.momo-section p {
+  font-size: 1.4rem;
+  color: #ff6f91;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* Footer Section */
+footer {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
